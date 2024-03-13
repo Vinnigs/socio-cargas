@@ -1,0 +1,85 @@
+@import url("../css/pesquisa-caminhoneiros.css");
+
+.frete-container-loja-img {
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.frete-container-loja-img img {
+  border-radius: 5px;
+}
+
+.frete-container-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.frete-container-cities p:nth-child(2) {
+  color: rgb(154, 154, 154);
+  opacity: 1;
+}
+
+.frete-container-cities p span {
+  color: black;
+  opacity: 1;
+}
+
+.frete-container-bottom {
+    margin-right: 4rem;
+}
+
+.frete-container-bottom-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.6rem;
+  font-weight: 500;
+}
+
+.frete-container-bottom-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.frete-container-bottom {
+    display: none;
+}
+
+.frete-container-bottom.active {
+    display: block;
+}
+
+@media screen and (max-width: 1020px) {
+    .frete-container-bottom {
+        margin-right: 0;
+    }
+
+  .frete-wrapper {
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: flex-start;
+  }
+
+  .frete-container-stars {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .frete-container-bottom-link {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .frete-container-stars {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

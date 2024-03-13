@@ -1,0 +1,66 @@
+.fretes-list-item {
+    border-bottom: none;
+  }
+  
+  .fretes-list {
+      padding-top: 2rem;
+  }
+  
+  .frete-wrapper {
+    padding: 2.2rem 3.2rem;
+    border-radius: 1rem;
+    border: 1px solid #e3e3e3;
+  }
+  
+  .frete-container-cities {
+    gap: 0.8rem;
+    padding-right: 1rem;
+  }
+  
+  .frete-container-cities p:nth-child(2) {
+    opacity: 0.5;
+  }
+  
+  .frete-container-loja-img {
+    border-radius: 50%;
+    width: 6.8rem;
+    height: 6.8rem;
+    max-width: 6.8rem;
+    max-height: 6.8rem;
+  }
+  
+  .frete-container-bottom-info p {
+    font-weight: 200;
+  }
+  
+  .frete-historico-status-caminhoneiro {
+    color: var(--laranja-principal);
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .cms-aside-menu-option-active::after {
+      right: -5.3rem;
+  }
+
+  
+  
+  @media screen and (max-width: 800px) {
+    .frete-wrapper {
+      gap: 2.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+      .cms-aside-menu-options {
+          margin-left: 0;
+      }
+
+      .new-frete-link p {
+        font-size: 1.4rem;
+      }
+
+      .new-frete-link p a {
+        font-size: 1.4rem;
+      }
+  }

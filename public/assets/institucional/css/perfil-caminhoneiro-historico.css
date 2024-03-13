@@ -1,0 +1,16 @@
+.frete-historico-status.finished {
+    color: rgb(7, 195, 7);
+}
+
+.frete-historico-status.canceled {
+    color: rgb(214, 6, 6);
+}
+
+.frete-historico-status.payment-pendent {
+    color: rgb(234, 199, 6);
+}
+
+.frete-historico-status.on-way {
+    color: rgb(5, 243, 129);
+}
+

@@ -1,0 +1,428 @@
+@import url("../css/pesquisa-fretes.css");
+
+.breadcrumb {
+  margin-top: 6.4rem;
+}
+
+.breadcrumb #container {
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  padding-bottom: 1.4rem;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.breadcrumb #container a {
+  padding: 0 1.4rem 0 0;
+  border-right: 2px solid #d9d9d9;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.3;
+  transition: all ease-in-out 0.2s;
+}
+
+.breadcrumb #container a:hover {
+  opacity: 1;
+}
+
+.breadcrumb #container p {
+  padding: 0 0 0 1.4rem;
+}
+
+main #container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 3.2rem;
+  margin-top: 6.4rem;
+  margin-bottom: 12rem;
+}
+
+.frete-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.frete-details-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  color: #fff;
+  padding: 1.45rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.frete-details-top h4 {
+  font-weight: 400;
+}
+
+.frete-details-resume {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+.frete-details-resume-item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.frete-details-resume-item span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.frete-details-resume-item p {
+  font-size: 1.4rem;
+}
+
+.frete-details-bottom {
+  background-color: var(--laranja-principal);
+  padding: 1.55rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.frete-details-bottom div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.frete-details-bottom p span {
+  font-weight: 600;
+}
+
+.frete-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2.4rem 0 3.2rem 0;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+
+.frete-main-general-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 0 2.4rem;
+}
+
+.frete-main-general-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding-left: 0.8rem;
+  border-left: 1px solid #d9d9d9;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.frete-main-general-info-text p span {
+  font-weight: 300;
+}
+
+.frete-main-obs-info {
+  background-color: yellow;
+  width: fit-content;
+  padding: 0.8rem 1.6rem;
+}
+
+.candidatar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--laranja-principal);
+  color: #000;
+  padding: 1.8rem 2.6rem;
+  width: fit-content;
+  margin-top: 3.2rem;
+  gap: 1.4rem;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.candidatar-link:hover {
+  background-color: #fca416b0;
+  transform: scale(1.01);
+}
+
+.frete-container {
+  background-color: var(--content-gray);
+  max-width: 38.4rem;
+  max-height: 26.2rem;
+  padding: 4rem 3.2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.frete-container-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.frete-container-top-info {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  max-height: 6.4rem;
+}
+
+.frete-container-loja-img {
+  width: 100%;
+  height: 100%;
+  max-width: 8rem;
+  max-height: 8rem;
+  min-width: 6rem;
+  min-height: 3rem;
+}
+
+.frete-container-top-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.frete-container-top-info-details .rectangle-frete-img {
+  max-height: 2.8rem;
+}
+
+.frete-container-cities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.frete-container-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.frete-container-bottom-type-product {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.frete-container-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.frete-bottom-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.frete-bottom-stats div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--main-red);
+}
+
+.frete-bottom-stats div,
+.type-of-frete-vehicle {
+  padding: 2px 0.8rem;
+  border-radius: 100px;
+}
+
+.type-of-frete-vehicle {
+  background-color: #555555;
+}
+
+.priority {
+  background-color: var(--background-color);
+  padding-top: 4rem;
+  padding-bottom: 12rem;
+}
+
+.pagina-frete-carousel #container {
+  position: relative;
+}
+
+.priority #container h3 {
+  color: #fff;
+  font-family: Lexend;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.3;
+  margin-bottom: 2.4rem;
+}
+
+.frete-container-top p {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  color: yellow;
+}
+
+.frete-container-cities p,
+.frete-container-bottom p {
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 1;
+}
+
+.frete-container-bottom .frete-value {
+  font-weight: 500;
+}
+
+.glide__arrow--left-fretes,
+.glide__arrow--right-fretes {
+  background-color: var(--laranja-principal) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.company-details-top {
+  background-color: var(--background-color);
+  padding: 1.45rem 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #fff;
+  height: 4.9rem;
+}
+
+.company-details-top h6 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.company-details-img {
+  width: 100%;
+
+}
+
+.company-details-img img {
+  max-width: 28.1rem;
+  max-height: 28.1rem;
+  min-width: 100%;
+}
+
+.company-details-contact {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.company-details-contact-link {
+  padding: 0.75rem 1.4rem;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company-details-contact-link:hover {
+  background-color: #fca416;
+}
+
+.company-details-contact-link:hover,
+.company-details-contact-tel:hover {
+  transform: scale(1.02);
+}
+
+.company-details-contact-tel {
+  display: flex;
+  gap: 1rem;
+}
+
+.company-details-contact-link,
+.company-details-contact-tel {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+  transition: all .2s ease-in-out;
+}
+
+.company-details-text-bot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.candidatar-link.disabled {
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 1240px) {
+  .breadcrumb #container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+
+  .priority #container h3 {
+    margin-left: 1.6rem;
+  }
+
+  .company-details {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .company-details {
+    width: 80%;
+  }
+  .frete-details-resume {
+    flex-direction: column;
+    gap: .8rem;
+    align-items: flex-start;
+  }
+  .frete-details-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .8rem;
+  }
+}

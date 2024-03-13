@@ -1,0 +1,420 @@
+.my-fretes {
+  background-color: white;
+  padding: 3.2rem 5.6rem;
+}
+
+.my-fretes-top h3 {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.7);
+  padding-bottom: 1rem;
+}
+
+
+
+.dados-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dados-form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.7);
+  padding-bottom: 4rem;
+}
+
+.dados-form-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 4rem;
+  border-bottom: 3px solid var(--laranja-principal);
+  padding-bottom: 1.2rem;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-inputs-container,
+.form-inputs-tel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#options {
+  z-index: 9;
+}
+
+.form-inputs-container input,
+.form-inputs-container select,
+.form-inputs-tel input {
+  padding: 1.7rem 2.2rem;
+  min-width: 28rem;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Lexend", sans-serif;
+  outline-color: var(--laranja-principal);
+  border: 1px solid rgb(189, 188, 188);
+  border-radius: 0.5rem;
+}
+
+.form-inputs-container select {
+  cursor: pointer;
+}
+
+.form-inputs-tel p {
+  color: #4d4d4d;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#perfil-date {
+  min-width: 17.3rem;
+  cursor: pointer;
+}
+
+.email-notifications-btn {
+  cursor: pointer;
+}
+
+.email-notifications-btn .switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.email-notifications-btn .switch .switch-text {
+  padding-right: 1.4rem;
+  font-size: 1.6rem;
+}
+
+.email-notifications-btn .switch .switch-wrapper {
+  display: inline-block;
+  width: 6rem;
+  height: 3.4rem;
+  position: relative;
+}
+
+.email-notifications-btn .switch .switch-wrapper .switch-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4rem;
+  background-color: #475569;
+}
+
+.email-notifications-btn .switch .switch-wrapper .switch-wrapper-btn {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.email-notifications-btn .switch .switch-wrapper .switch-button::before {
+  content: "";
+  height: 2.6rem;
+  width: 2.6rem;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  background-color: aliceblue;
+}
+
+.email-notifications-btn
+  .switch
+  .switch-wrapper
+  .switch-wrapper-btn:checked
+  + .switch-button {
+  background-color: var(--laranja-principal);
+}
+
+.email-notifications-btn
+  .switch
+  .switch-wrapper
+  .switch-wrapper-btn:checked
+  + .switch-button::before {
+  transform: translateX(2.6rem);
+}
+
+/* Select Button -=-=-=--=-=-=-=-=-=-=-=-=-*/
+#category-select {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#category-select label {
+  font-size: 1.6rem;
+  transition: all ease-in-out 0.22s;
+}
+
+#select-button {
+  display: flex;
+  padding: 1.7rem 2.2rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(189, 188, 188);
+  width: 28rem;
+}
+
+#selected-value {
+  color: black;
+}
+
+#chevrons i {
+  font-size: 1.6rem;
+}
+
+#chevrons [class="ph ph-caret-up"] {
+  display: none;
+}
+
+#options-view-button1:focus + #select-button,
+#options-view-button1:checked + #select-button {
+  outline: 1px solid var(--laranja-principal);
+}
+
+#category-select:has(#options-view-button1:checked) label,
+#options-view-button1:checked + #select-button #chevrons {
+  color: var(--laranja-principal);
+}
+
+#options-view-button1:checked
+  + #select-button
+  #chevrons
+  [class="ph ph-caret-down"] {
+  display: none;
+}
+
+#options-view-button1:checked
+  + #select-button
+  #chevrons
+  [class="ph ph-caret-up"] {
+  display: block;
+}
+
+#category-select {
+  position: relative;
+}
+
+#options-view-button1,
+.options-view-button2 {
+  all: unset;
+
+  position: absolute;
+  inset: 0;
+
+  cursor: pointer;
+  z-index: 3;
+}
+
+.form-input-radio {
+  min-width: fit-content !important;
+}
+
+#options {
+  margin-top: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(189, 188, 188);
+  background-color: white;
+  display: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.6rem 1.2rem;
+  width: 100%;
+  border-bottom: 1px solid rgb(189, 188, 188);
+  position: relative;
+}
+
+.option .label-selected-form {
+  color: #000;
+}
+
+.option i {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.option i:last-child {
+  margin-left: auto;
+  color: var(--laranja-principal);
+}
+
+.option:has(input:checked),
+.option:hover {
+  border-bottom: 1px solid var(--laranja-principal);
+  background-color: rgb(251, 231, 209);
+}
+
+.option:has(input:focus) {
+  outline: 1px solid var(--laranja-principal);
+}
+
+.option [class="ph ph-check"] {
+  display: none;
+}
+
+.option:has(input:checked) [class="ph ph-check"] {
+  display: block;
+}
+
+.option input[type="radio"] {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+#category-select:has(#options-view-button1:checked) + #options {
+  display: block;
+  position: absolute;
+  width: 28rem;
+}
+
+.select:has(.option input:checked) #category-select label {
+  color: var(--laranja-principal);
+}
+
+.select:has(.option input:checked) #selected-value {
+  color: black;
+}
+
+/* Perfil IMG*/
+.perfil-img-content {
+  max-height: 8rem;
+  max-width: 8rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #dfdfdf;
+}
+
+.form-inputs-container {
+  position: relative;
+}
+
+.hidden-input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 0 !important;
+  width: 50%;
+  height: 100%;
+  cursor: pointer; /* O cursor muda para indicar que é clicável */
+  border-radius: 50%;
+}
+
+.form-img-perfil-container {
+  width: 28rem;
+}
+
+.perfil-img-content {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-img-perfil-container-wrapper-hover {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.6rem;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+}
+
+.perfil-img-content:hover {
+  opacity: 0.6;
+}
+
+.form-img-perfil-container-wrapper-hover i {
+  font-size: 2.6rem;
+}
+
+.hidden-input:hover {
+  display: block;
+}
+
+.form-img-perfil-container:hover .form-img-perfil-container-wrapper-hover {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-wrapper {
+    margin-top: 3.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: .8rem;
+}
+
+.regular-btn {
+    padding: 1.6rem 2.4rem;
+    background-color: var(--laranja-principal);
+    border: none;
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.regular-btn:hover {
+    background-color: #fe9d00b6;
+}
+
+.form-inputs-tel .profile-info-rating-rate-number {
+  padding: .4rem .8rem;
+  background-color: yellow;
+  border-radius: .8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.details-wrapper {
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width:850px) {
+    .form-inputs-container input, .form-inputs-container select, .form-inputs-tel input, #select-button, .form-img-perfil-container {
+        min-width: 22rem;
+        width: 24rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-inputs {
+        flex-direction: column;
+        gap: 3.6rem;
+    }
+
+    .my-fretes {
+        padding: 2.4rem 3.2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .email-notifications-btn .switch {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+}

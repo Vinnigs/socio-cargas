@@ -1,0 +1,162 @@
+@import url("./header-fretes.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+  --laranja-primario: #fe9d00;
+  --main-black: #171717;
+  --light-black: #211e1f;
+  --background: #efefef;
+  --padding: 0 7.7%;
+  --main-blue: #0f1620;
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+  background: var(--laranja-primario);
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #efab3c;
+}
+html ::-webkit-scrollbar-track {
+  background: #ededed;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--background);
+  transition: all 0.5s ease-in-out;
+  font-family: "Lexend", sans-serif;
+  overflow-x: hidden;
+  transition: all ease 0.3s;
+}
+
+.header-img-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 13.015rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 3.2rem;
+}
+
+.header-right {
+  background: none;
+}
+
+.header-right-info a {
+  padding: 1.3rem 2.5rem;
+  background-color: var(--laranja-primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-right-info a:hover {
+  background-color: #efab3c;
+}
+
+.header-right-info:hover .header-right-info .header-svg path {
+  fill: orange;
+}
+
+.input-search-wrapper {
+  position: relative;
+}
+
+#frete-search {
+  padding: 1.2rem 0 1.2rem 3.8rem;
+  background: none;
+  border-radius: 10px;
+  border-radius: 4px;
+  border: 1px solid #ffffff76;
+  color: #fff;
+
+  font-family: "Lexend";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-search-wrapper svg {
+  position: absolute;
+  left: 1.4rem;
+  top: 1.6rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .header-img-wrapper {
+    gap: 5rem;
+  }
+  .header-right {
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .input-search-wrapper svg {
+    display: none;
+  }
+
+  #frete-search {
+    padding: 1.2rem 0 1.2rem 2.4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header-img-wrapper svg {
+    display: none;
+  }
+
+  .header-img-wrapper {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .header-right-info a {
+    padding: 0;
+    background: none;
+  }
+
+  .header-right-btns {
+    gap: 3.6rem!important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-img-wrapper svg {
+    display: none;
+  }
+
+  .header-img-wrapper {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .mobile-profile-pic {
+    padding: 1.8rem;
+    border-radius: 5px;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-profile-pic img {
+    height: 2rem;
+  }
+}

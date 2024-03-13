@@ -1,0 +1,118 @@
+.cms-aside-menu-option {
+  max-width: 20.4rem;
+}
+
+.dashboard-info-wrapper {
+    width: 100%;
+    max-width: 936px;
+    margin: 0 auto;
+}
+
+.cms-dashboard-wrapper {
+  background-color: #fff;
+  padding: 3.2rem;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  border-radius: 24px;
+  margin-bottom: 4.8rem;
+  margin-top: 2.4rem;
+}
+
+.dashboard-info {
+  padding: 2.4rem 1rem 2.4rem 2.4rem;
+  border: 1px solid #d2d2d3;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.dashboard-info h4 {
+  color: #4d4d4d;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.dashboard-info-numbers p {
+    color: #4D4D4D;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.dashboard-info-numbers {
+    display: flex;
+    gap: 1.6rem;
+    align-items: end;
+}
+
+.dashboard-info-numbers .dashboard-info-number {
+    color: #000;
+font-size: 6.4rem;
+line-height: 80%;
+}
+
+.my-fretes {
+    margin-bottom: 4rem;
+    padding-bottom: 0rem;
+    margin: 0;
+    max-width: none;
+    width: 100%;
+}
+
+.fretes-link-all {
+    display: flex;
+    text-align: end;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .8rem;
+    text-decoration: none;
+    color: var(--laranja-principal);
+}
+
+
+
+@media screen and (max-width: 1240px) {
+    .dashboard-info-wrapper {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cms-dashboard-wrapper {
+        gap: 2.4rem;
+    }
+
+    .dashboard-info-numbers .dashboard-info-number {
+        font-size: 4rem;
+    }
+
+    .dashboard-info {
+        min-height: 13rem;
+        justify-content: space-between;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .cms-dashboard-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .dashboard-info-numbers .dashboard-info-number {
+        font-size: 4.8rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cms-dashboard-wrapper {
+        padding: 3.2rem;
+    }
+
+    .dashboard-info {
+    padding: 2rem 1rem 2rem 2.4rem;
+    }
+}

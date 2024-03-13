@@ -1,0 +1,398 @@
+.frete-details-wrapper {
+  width: 100%;
+  max-width: 936px;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+.frete-details-geral {
+  background-color: var(--background-color);
+  color: white;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.6rem 2.4rem;
+}
+
+.frete-details-geral-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.frete-details-geral-info p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.frete-details-geral-info h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.frete-details-panel {
+  display: grid;
+  grid-template-columns: 3fr 3fr 4fr;
+  gap: 2.4rem;
+}
+
+.frete-details-panel-content {
+  border-radius: 1.2rem;
+  height: 46.2rem;
+  min-height: 46.2rem;
+  max-height: 46.2rem;
+  margin-top: 3.2rem;
+  background-color: var(--background-color);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.frete-details-panel-content-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  overflow-y: auto;
+}
+
+.frete-details-panel-title {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.frete-details-panel-content-actions-item {
+  display: flex;
+  background-color: #303845;
+  padding: 1.8rem 1.2rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease-in-out 0.25s;
+  cursor: pointer;
+}
+
+.frete-details-add-action {
+  display: none;
+}
+
+.frete-details-panel-content-actions-item:hover {
+  background-color: #191d24;
+}
+
+.frete-details-panel-content-actions-item:hover .frete-details-add-action {
+  display: block;
+}
+
+.frete-details-panel-content-actions-item-info {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.frete-details-panel-content-actions-item-info-column {
+  align-items: start;
+}
+
+.frete-details-panel-content-actions-item-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.frete-details-panel-content-actions-item-top p:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.frete-details-panel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frete-details-panel-candidatos-number {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.1rem 1.6rem;
+  background: #303845;
+  border-radius: 16px;
+}
+
+.frete-details-panel-content-actions-item-content {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.frete-details-panel-content-actions-item-content-img-caminhoneiro {
+  border-radius: 8px;
+  width: 5.6rem;
+  height: 5.6rem;
+  max-width: 5.6rem;
+  max-height: 5.6rem;
+  min-width: 5.6rem;
+  min-height: 5.6rem;
+}
+
+.frete-details-panel-content-actions-item-content-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.frete-details-panel-content-actions-item-content-aside h3 {
+  color: #fff;
+
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.frete-details-panel-content-actions-item-content-aside p {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.ver-caminhoneiro {
+  color: var(--laranja-principal);
+  text-decoration: none;
+  font-family: Lexend;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+html .frete-details-panel-content-actions::-webkit-scrollbar {
+  width: 4px;
+}
+
+html .frete-details-panel-content-actions::-webkit-scrollbar {
+  width: 4px;
+}
+
+.frete-details-panel-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.frete-details-panel-bottom a {
+  color: #fe9d00;
+  font-family: Lexend;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.modal-caminhoneiro-wrapper,
+.modal-list-wrapper {
+  display: none;
+}
+
+.modal-caminhoneiro-wrapper.active,
+.modal-list-wrapper.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  max-height: 84rem;
+  z-index: 100;
+}
+
+.modal-caminhoneiro,
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  padding: 1.6rem 2.4rem 3.6rem 1.6rem;
+  width: 59.2rem;
+  height: 49.4rem;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.modal-list {
+  width: 72rem;
+  height: 52rem;
+  padding: 2.6rem 2.6rem 3.6rem 2.6rem;
+}
+
+.modal-list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.modal-list-top img {
+  cursor: pointer;
+}
+
+.modal-list .frete-details-panel-content-actions-item-content-img-caminhoneiro {
+  height: 7.2rem;
+  width: 7.2rem;
+  max-width: 7.2rem;
+  max-height: 7.2rem;
+  min-width: 7.2rem;
+  min-height: 7.2rem;
+}
+
+.modal-caminhoneiro-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+
+.modal-caminhoneiro-top img {
+  cursor: pointer;
+}
+
+.modal-caminhoneiro-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-caminhoneiro-info img {
+  width: 164px;
+  height: 164px;
+  max-width: 16.4rem;
+  max-height: 16.4rem;
+  min-height: 16.4rem;
+  min-width: 16.4rem;
+  border-radius: 8px;
+}
+
+.modal-caminhoneiro-info h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.modal-caminhoneiro-info-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.modal-caminhoneiro-info-btns button {
+  padding: 0.8rem 5.6rem;
+  border-radius: 6px;
+  background: #d9d9d9;
+  color: #000;
+  font-family: Lexend;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-caminhoneiro-info-btns button:hover {
+  opacity: 0.9;
+}
+
+.modal-caminhoneiro-info-btns button:nth-child(2) {
+  background: var(--laranja-principal);
+  color: #fff;
+}
+
+.modal-caminhoneiro-bottom {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  gap: 2.4rem;
+  margin-top: 4.8rem;
+  margin-left: 0.8rem;
+}
+
+.modal-caminhoneiro-bottom p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.modal-caminhoneiro-bottom p span {
+  font-weight: 300;
+}
+
+.caminhoneiro-signature {
+  font-weight: 600;
+}
+
+.caminhoneiro-signature.diamante {
+  background: linear-gradient(270deg, #d9d9d9 0%, #45fff4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.frete-details-panel-content-actions-item:nth-child(n + 6) {
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .frete-details-wrapper {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .my-fretes-top-info-menu {
+    padding-bottom: 2.4rem;
+    justify-content: end;
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .frete-details-wrapper {
+    max-width: 75%;
+  }
+
+  .frete-details-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 8rem;
+  }
+
+  .frete-details-panel-content {
+    height: fit-content;
+    min-height: 0;
+    padding-bottom: 3.2rem;
+  }
+
+  .frete-details-geral {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .frete-details-wrapper {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ver-caminhoneiro {
+    display: none;
+  }
+}

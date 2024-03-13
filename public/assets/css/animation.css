@@ -1,0 +1,34 @@
+.hidden {
+    opacity: 0;
+    transform: translateX(-10rem);
+    transition: all 1s;
+    overflow-x: hidden;
+  }
+  
+  .hidden-right {
+    opacity: 0;
+    transform: translateX(1rem);
+    transition: all 1s;
+    overflow-x: hidden;
+  }
+
+  .hidden-bottom {
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: all 1s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+    overflow-x: hidden;
+  }
+  
+  @media (prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }

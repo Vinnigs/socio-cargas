@@ -1,0 +1,274 @@
+:root {
+    --bg-color: #111111;
+}
+
+.my-fretes {
+    max-width: 1200px;
+    height: fit-content;
+}
+
+.profile-page-left {
+    background-color: var(--bg-color);
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0px 4px 12.5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.profile-page-left-trucker-img {
+    max-width: 21.2rem;
+    max-height: 21.2rem;
+    width: 21.2rem;
+    height: 21.2rem;
+    border-radius: 50%;
+}
+
+.profile-page-left-trucker-name {
+    margin-top: 3.2rem;
+    color: #FFF;
+    font-family: "Lexend";
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.profile-page-left-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2rem;
+    width: 100%;
+    color: #fff;
+}
+
+.profile-page-left-info-verified {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-page-left-info-verified-text {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.profile-page-left-info-verified-text h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.profile-page-left-info-verified-text p {
+    font-size: 1.6rem;
+    color: #D9D9D9;
+    font-weight: 400;
+}
+
+.profile-page-verified-img {
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 50%;
+    background: rgba(254, 157, 0, 0.30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-page-left-info-status {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.profile-page-left-info-status h3 {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.profile-page-left-info-status h3 span {
+    color: #00FB19;
+}
+
+.profile-page-right-ratings {
+    background-color: var(--bg-color);
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12.5px 1px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    overflow: auto;
+}
+
+.profile-page-right-ratings-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-right-ratings-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 2rem 1.2rem 2rem;
+    border-bottom: 1px solid #dadada;
+}
+
+.profile-page-title,
+.profile-page-right-ratings-rate-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.profile-page-right-ratings-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-right-ratings-comments-comment {
+    border-bottom: 1px solid #dadada;
+    padding: 1.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.profile-page-right-ratings-comments-comment:last-child {
+    border-bottom: none;
+}
+
+.profile-page-right-ratings-comments-comment-rate {
+    display: flex;
+    gap: 0rem;
+    align-items: center;
+}
+
+.profile-page-right {
+    display: grid;
+    grid-template-rows: 24.7rem 24.7rem;
+    gap: 3.2rem;
+}
+
+.profile-container {
+    max-height: 540px;
+
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 3.2rem;
+}
+
+.profile-page-right-bottom {
+    background: var(--bg-color);
+    height: 100%;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12.5px 1px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trips-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem 0;
+    border-top: 1px solid #fff;
+}
+
+.trips-infos span {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+}
+
+.trips-infos span p {
+    font-weight: 400;
+}
+
+.trips-infos-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.6rem;
+}
+
+.trips-infos-btns button {
+    padding: 1rem 2.6rem;
+    color: #ED1C24;
+    font-family: Lexend;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+
+.trips-infos-btns button:last-child {
+    color: #fff;
+    background-color: var(--laranja-principal);
+}
+
+.profile-page-right-ratings::-webkit-scrollbar, .fretes-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.fretes-historic {
+    padding: 1.6rem 2rem 3.2rem 2rem;
+    margin-top: 3.2rem;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.fretes-historic .profile-page-title {
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dadada;
+}
+
+.fretes-list {
+    padding-top: 2rem;
+    gap: 2.4rem;
+    max-height: 540px;
+    overflow: auto;
+}
+
+.frete-wrapper {
+    border-radius: 8px;
+}
+
+.fretes-list-item {
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    :root {
+        font-size: 55%;
+    }
+    .profile-page-right {
+        grid-template-rows: 27.7rem 28.7rem;
+    }
+}
+@media screen and (max-width: 424px) {
+    :root {
+        font-size: 53%!important;
+    }
+}

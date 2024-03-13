@@ -1,0 +1,359 @@
+main #container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 3.2rem;
+    margin-top: 6.4rem;
+    margin-bottom: 12rem;
+}
+
+.filter {
+    background-color: var(--background-color);
+    color: #fff;
+    position: relative;
+}
+
+.filter-block {
+    padding: 3.2rem 2.4rem;
+    border-top: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.filter-block div {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+}
+
+.filter-block label {
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 1.4rem;
+}
+
+.filter-block label,
+.filter-block input {
+    cursor: pointer;
+}
+
+.filter select {
+    padding: 0.4rem 0.8rem;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.filter select option {
+    background-color: #000;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+}
+
+#filter-close-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+.select-title {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.select-title h5 {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.new-frete-link {
+    background: rgba(254, 157, 0, 0.10);
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 1.4rem;
+    gap: 2.4rem;
+}
+
+.new-frete-link p {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.new-frete-link p a {
+    color: var(--laranja-principal);
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.new-frete-img-wrapper {
+    padding: .8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(254, 157, 0, 0.20);
+    border-radius: 50%;
+    max-width: 4rem;
+    height: 4rem;
+}
+
+.new-frete-img-wrapper img {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.frete-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frete-quantity span {
+    color: #5A5A5A;
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    margin: 2.4rem 0 1.4rem 0;
+}
+
+.frete-quantity span p {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.frete-quantity img {
+    max-width: 2rem;
+    max-height: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.frete-wrapper {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 3.2rem;
+    background-color: #fff;
+}
+
+.frete-container-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.frete-container-top-info {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    max-height: 6.4rem;
+}
+
+.frete-container-loja-img {
+    width: 100%;
+    height: 100%;
+    max-width: 8rem;
+    max-height: 8rem;
+    min-width: 6rem;
+    min-height: 3rem;
+}
+
+.frete-container-top-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.frete-container-top-info-details .rectangle-frete-img {
+    max-height: 2.8rem;
+}
+
+.frete-container-cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.frete-container-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.frete-container-bottom-type-product {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.frete-container-bottom-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.frete-bottom-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.frete-bottom-stats div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: var(--main-red);
+}
+
+.frete-bottom-stats div,
+.type-of-frete-vehicle {
+    padding: 2px 0.8rem;
+    border-radius: 100px;
+}
+
+.type-of-frete-vehicle {
+    background-color: #E1E1E1;
+}
+
+.distance-vehicle {
+    background-color: var(--laranja-principal);
+    color: #fff !important;
+}
+
+.priority {
+    background-color: var(--background-color);
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+}
+
+.priority #container h3 {
+    color: #000;
+    font-family: Lexend;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.3;
+    margin-bottom: 2.4rem;
+}
+
+.frete-container-top p {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.frete-container-cities p,
+.frete-container-bottom p {
+    color: #000;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    opacity: 1;
+}
+
+.frete-container-bottom .frete-value {
+    font-weight: 500;
+}
+
+.fretes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    border-top: 1px solid #E1E1E1;
+    padding-top: 1.4rem;
+}
+
+.fretes-list-item {
+    list-style: none;
+    background: #F2F2F2;
+    border-bottom: 2px solid var(--laranja-principal);
+}
+
+.frete-value-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1240px) {
+    main #container {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    :root {
+        font-size: 58.5%;
+    }
+
+    .frete-value {
+        display: none;
+    }
+
+    .frete-value-mobile {
+        display: flex;
+    }
+
+    .frete-container-bottom-info {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .frete-wrapper {
+        padding: 3.2rem 2.4rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .filter {
+        display: none;
+        position: absolute;
+        top: 28.3rem;
+        right: 2rem;
+        width: 60vw;
+    }
+
+    .filter.active {
+        display: block;
+    }
+    
+    main #container {
+        display: block;
+    }
+
+    .frete-wrapper {
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: flex-start;
+    }
+
+    .frete-quantity img {
+        display: block;
+    }
+
+    #filter-close-btn {
+        display: block;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .filter {
+        width: 90vw;
+    }
+}

@@ -1,0 +1,125 @@
+:root {
+    --background-color: #171717;
+    --light-gray: #202020;
+    --laranja-principal: #fe9d00;
+    --content-gray: #282828;
+    --main-red: #893a43;
+    --background: #efefef;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    background-color: var(--background);
+    font-size: 1.6rem;
+    transition: all 0.5s ease-in-out;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: var(--laranja-principal);
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+    background-color: #efab3c;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1216px;
+}
+
+/* Header =====-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+header {
+    background: none;
+    position: relative;
+    top: 0;
+    padding: 2.4rem 0;
+}
+
+header img {
+    max-width: 10rem;
+}
+
+.header-links {
+    display: flex;
+    gap: 5.6rem;
+}
+
+.header-links a {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+}
+
+.header-links a:hover {
+    color: #f7ad37;
+    transform: scale(1.03);
+}
+
+header #container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.3rem 2.4rem;
+    border-radius: 5px;
+    background-color: var(--laranja-principal);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Main =-==-==-=-=-=-=-=-=-=-=-=-*/
+
+/* Transition =-==-=--====-=-=-=-=*/
+.transition #container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 10.4rem;
+}
+
+.transition #container a {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    color: #ababab;
+    font-family: Lexend;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform ease-in-out 0.2s;
+}
+
+.transition #container a:hover {
+    transform: scale(1.035);
+    filter: invert(75%) sepia(66%) saturate(2976%) hue-rotate(359deg) brightness(145%) contrast(102%);
+}

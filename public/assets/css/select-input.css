@@ -1,0 +1,190 @@
+.select {
+  z-index: 9;
+}
+
+#category-select {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#category-select label {
+  font-size: 1.6rem;
+  transition: all ease-in-out 0.22s;
+}
+
+#select-button {
+  display: flex;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(189, 188, 188);
+  width: 28rem;
+}
+
+#select-button-general {
+  padding: 1.7rem 2.2rem;
+}
+
+#selected-value {
+  color: black;
+}
+
+#chevrons i {
+  font-size: 1.6rem;
+}
+
+#chevrons [class="ph ph-caret-up"] {
+  display: none;
+}
+
+#options-view-button1:focus + #select-button,
+#options-view-button1:checked + #select-button {
+  outline: 1px solid var(--laranja-principal);
+}
+
+#category-select:has(#options-view-button1:checked) label,
+#options-view-button1:checked + #select-button #chevrons {
+  color: var(--laranja-principal);
+}
+
+#options-view-button1:checked
+  + #select-button
+  #chevrons
+  [class="ph ph-caret-down"] {
+  display: none;
+}
+
+#options-view-button1:checked
+  + #select-button
+  #chevrons
+  [class="ph ph-caret-up"] {
+  display: block;
+}
+
+#category-select {
+  position: relative;
+}
+
+#options-view-button1,
+.options-view-button2 {
+  all: unset;
+
+  position: absolute;
+  inset: 0;
+
+  cursor: pointer;
+  z-index: 3;
+}
+
+.form-input-radio {
+  min-width: fit-content !important;
+}
+
+#options {
+  margin-top: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(189, 188, 188);
+  background-color: white;
+  display: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.6rem 1.2rem;
+  width: 100%;
+  border-bottom: 1px solid rgb(189, 188, 188);
+  position: relative;
+}
+
+.option .label-selected-form {
+  color: #000;
+}
+
+.option i {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.option i:last-child {
+  margin-left: auto;
+  color: var(--laranja-principal);
+}
+
+.option:has(input:checked),
+.option:hover {
+  border-bottom: 1px solid var(--laranja-principal);
+  background-color: rgb(251, 231, 209);
+}
+
+.option:has(input:focus) {
+  outline: 1px solid var(--laranja-principal);
+}
+
+.option [class="ph ph-check"] {
+  display: none;
+}
+
+.option:has(input:checked) [class="ph ph-check"] {
+  display: block;
+}
+
+.option input[type="radio"] {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+#category-select:has(#options-view-button1:checked) + #options {
+  display: block;
+  position: absolute;
+  width: 28rem;
+}
+
+.select:has(.option input:checked) #category-select label {
+  color: var(--laranja-principal);
+}
+
+.select:has(.option input:checked) #selected-value {
+  color: black;
+}
+
+#selected-value {
+  color: gray;
+}
+
+@media screen and (max-width: 850px) {
+  .form-inputs-container input,
+  .form-inputs-container select,
+  .form-inputs-tel input,
+  #select-button,
+  .form-img-perfil-container {
+    min-width: 22rem;
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-inputs {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .email-notifications-btn .switch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  .select-button {
+    padding: 0.8rem;
+  }
+}

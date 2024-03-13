@@ -1,0 +1,158 @@
+@import url("../css/main-cargas.css");
+
+.profile-info-rating {
+  height: 16.1rem;
+  position: relative;
+}
+
+.profile-info-rating #container {
+  position: relative;
+  flex-direction: column;
+  top: 70%;
+}
+
+.profile-info-rating #container #pagina-frete-loja-name {
+  margin-top: 2rem;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+  max-width: 80%;
+  text-align: center;
+}
+
+#pagina-frete-loja-img {
+  width: 13.2rem;
+  max-width: 13.2rem;
+  max-height: 13.2rem;
+  height: 13.2rem;
+}
+
+main {
+  background-color: var(--background);
+}
+
+main #container {
+  display: block;
+  margin-top: 18rem;
+}
+
+main #container .pagina-empresa-title {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+main #container .pagina-empresa-title span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.fretes-list-container-page {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+  margin-top: 1.4rem;
+  overflow-x: auto;
+}
+
+.frete-container-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  text-decoration: none;
+}
+
+.frete-container {
+  display: block;
+  cursor: pointer;
+}
+
+.fretes-list-container-page .frete-container {
+  background-color: #fff;
+  color: #000;
+}
+
+.frete-container-cities p {
+  color: #000;
+}
+
+.frete-container-top p {
+  color: #000000b4;
+}
+
+.frete-container-bottom p {
+  color: #fff;
+}
+
+.frete-container-bottom .type-of-product-text {
+  color: #000;
+}
+
+.frete-container-bottom .type-of-frete-vehicle {
+  background-color: rgb(233, 231, 231);
+  color: #000;
+}
+
+.type-of-frete-vehicle .type-of-frete-vehicle {
+  color: #000;
+}
+
+.frete-container-bottom .frete-value {
+  color: #000;
+}
+
+@media screen and (max-width: 1170px) {
+  .frete-value {
+    display: block;
+  }
+
+  .frete-container {
+    max-height: none;
+  }
+
+  .fretes-list-container-page .frete-container {
+    gap: 2.4rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .profile-info-rating #container {
+    align-items: center;
+  }
+
+  #pagina-empresa-main #container .pagina-empresa-title {
+    margin-left: 2rem;
+  }
+
+  .fretes-list-container-page .frete-container {
+    margin-left: 2rem;
+  }
+
+  .fretes-list-container-page .frete-container:last-child {
+    margin-right: 2rem;
+  }
+
+  main #container {
+    max-width: 100%;
+  }
+
+  .fretes-list-container-page {
+    display: flex;
+    grid-gap: 0;
+    gap: .4rem;
+  }
+
+  .frete-container {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .fretes-list-container-page .frete-container {
+    max-width: 33rem;
+  }
+}

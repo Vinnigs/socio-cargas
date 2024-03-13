@@ -1,0 +1,51 @@
+.error-page-main #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+}
+
+.error-page-main #container img {
+    max-width: 90%;
+}
+
+.error-page-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-page-info h2 {
+    color: #FE9D00;
+    font-size: clamp(2rem, 3vw, 3.2rem);
+    font-weight: 400;
+}
+
+.error-page-info a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 7rem;
+    background: none;
+    border: 1px solid var(--laranja-principal);
+    color: var(--laranja-principal);
+    transition: all ease-in-out .2s;
+}
+
+.error-page-info a:hover {
+    background-color: #fe9d0015;
+}
+
+.error-page-info a img {
+    margin-right: .8rem;
+}
+
+@media screen and (max-width: 500px) {
+    .error-page-info a {
+        padding: 1.4rem 5rem;
+    }
+}

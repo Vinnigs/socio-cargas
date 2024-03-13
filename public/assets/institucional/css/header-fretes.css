@@ -1,0 +1,114 @@
+@import url('../css/main.css');
+@import url('../css/simple-menu-header.css');
+
+header {
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 99;
+}
+
+header #container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #container img {
+  max-width: 10rem;
+}
+
+.header-right {
+  display: flex;
+  gap: 5.6rem;
+  align-items: center;
+  background-color: var(--light-gray);
+  padding: 2.4rem 4rem;
+  border-radius: 0px 0px 10px 10px;
+  transition: all ease-in-out 0.3s;
+}
+
+.header-right-info {
+  display: flex;
+  gap: 0.8rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+}
+
+header.header-scrolled {
+  background-color: #121212;
+  padding: 7px 0 7px 0;
+}
+
+header.header-scrolled .header-right {
+  padding: 1.2rem 4rem;
+  border-radius: 5px;
+}
+
+.header-right .header-right-info {
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.header-right .header-right-info .header-svg path {
+  transition: all 0.3s ease-in-out;
+}
+
+.header-right .header-right-info:hover {
+  color: var(--laranja-principal);
+}
+
+.header-right .header-right-info:hover .header-svg path {
+  fill: var(--laranja-principal);
+}
+
+@media screen and (max-width: 1244px) {
+  header #container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1.6rem 0;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  header #container {
+    flex-direction: row-reverse;
+    padding: 1rem 0;
+  }
+
+  .nav-list li a {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2rem;
+  }
+
+  .nav-list li:nth-child(7) {
+    border-bottom: none;
+  }
+
+  .nav-list li a i {
+    font-size: 2.4rem;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
